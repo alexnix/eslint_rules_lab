@@ -13,7 +13,6 @@
       "plugin:@typescript-eslint/recommended"
     ],
     "rules": {
-      "prevent-apigen-enum-iteration":"error",
       "no-enum-direct-usage":"error",
     }
   }
