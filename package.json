@@ -4,12 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint . --ext .ts --rulesdir ./rules"
+    "lint:dev:enum": "eslint ./src/enum-import/* --ext .json --rulesdir ./rules"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
-    "eslint": "^8.3.0"
+    "eslint": "^8.3.0",
+    "eslint-plugin-json-schema-validator": "^2.1.12",
+    "eslint-plugin-jsonc": "^2.0.0",
+    "jsonc-eslint-parser": "^2.0.4"
   },
   "dependencies": {
     "@typescript-eslint/experimental-utils": "^5.5.0",
