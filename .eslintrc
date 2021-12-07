@@ -23,7 +23,7 @@
             "schemas": [
                 {
                   "fileMatch": ["**/manifest.json"],
-                  "schema": "./manifest_schema.json"
+                  "schema": "./src/schema-validate/manifest.schema.json"
                 }
             ],
             "useSchemastoreCatalog": false

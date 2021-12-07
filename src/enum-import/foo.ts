@@ -1,11 +1,5 @@
 
-export enum MeNum {
-    FOO,
-    BAR,
+export enum Enum {
+  FOO,
+  BAR,
 }  
-
-export namespace SomeNamespace{
-    export enum SomeEnum{
-        Foo,
-    }
-}
