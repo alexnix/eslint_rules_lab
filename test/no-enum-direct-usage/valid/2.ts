@@ -1,3 +1,3 @@
 import { Enum } from "@foo";
 
-console.log(Enum);
+console.log(Enum.BAR);

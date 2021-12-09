@@ -5,10 +5,8 @@
       "project": ["./tsconfig.json"],
     },
     "plugins": [
-      "@typescript-eslint/eslint-plugin"
-    ],
-    "extends": [
-      "plugin:json-schema-validator/recommended"
+      "@typescript-eslint/eslint-plugin",
+      "json-schema-validator",
     ],
     "overrides": [
       {
@@ -29,6 +27,7 @@
             "useSchemastoreCatalog": false
         }
       ],
+      "@typescript-eslint/no-unnecessary-boolean-literal-compare": "off",
       "no-enum-direct-usage": "warn",
     }
-  }
+  }  

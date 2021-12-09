@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev:enum": "eslint ./src/enum-import/index.ts --rulesdir ./rules",
-    "test:enum": "jest --config test/no-enum-direct-usage/jest.config.js",
+    "dev:enum": "eslint ./src/no-enum-direct-usage/index.ts --rulesdir ./rules",
+    "test:enum": "jest test/no-enum-direct-usage/index.test.js",
     "use:schema-validate": "eslint ./src/schema-validate/* --ext .json --rulesdir ./rules"
   },
   "devDependencies": {

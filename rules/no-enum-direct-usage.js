@@ -39,7 +39,7 @@ module.exports = {
     return {
       // eslint-disable-next-line @typescript-eslint/naming-convention -- this name comes from AST
       ImportDeclaration(node) {
-        if (node.source.value.includes("/foo")) {
+        if (node.source.value.includes("foo")) {
           importedFromFoo.push(...node.specifiers.map((s) => s.local.name));
         }
       },

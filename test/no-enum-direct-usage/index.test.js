@@ -14,12 +14,23 @@ ruleTester.run("test-rule", rule, {
   valid: [
     {
       code: fs.readFileSync(`${__dirname}/valid/1.ts`, "utf8"),
+      filename: `${__dirname}/valid/1.ts`,
+    },
+    {
+      code: fs.readFileSync(`${__dirname}/valid/1.ts`, "utf8"),
+      filename: `${__dirname}/valid/2.ts`,
     },
   ],
   invalid: [
     {
       code: fs.readFileSync(`${__dirname}/invalid/1.ts`, "utf8"),
       errors: [{}],
+      filename: `${__dirname}/invalid/1.ts`,
+    },
+    {
+      code: fs.readFileSync(`${__dirname}/invalid/2.ts`, "utf8"),
+      errors: [{}],
+      filename: `${__dirname}/invalid/2.ts`,
     },
   ],
 });
